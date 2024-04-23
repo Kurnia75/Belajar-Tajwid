@@ -1,0 +1,64 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon"></ion-icon>
+    </button>
+    <ion-title>
+      <span text-color="my-custom-color" class="title">Hukum Mad</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <button class="btn" ion-button (click)="MadThobiiPage()" outline block>Mad Thobi'i (مد طبعى)</button>
+        <button class="btn" ion-button (click)="MadWMPage()" outline block>Mad Wajib Muttasil (مد واجب متصل)</button>
+        <button class="btn" ion-button (click)="MadJMPage()" outline block >Mad Ja'iz Munfasil (مد جاءز منفصل)</button>
+        <button class="btn" ion-button (click)="MadLPage()" outline block>Mad Lin (مد لين)</button>
+        <button class="btn" ion-button (click)="MadBPage()" outline block>Mad Badal (مد بدال)</button>
+        <button class="btn" ion-button (click)="MadTPage()" outline block>Mad Tamkin (مد تمكين)</button>
+        <button class="btn" ion-button (click)="MadIPage()" outline block>Mad Iwadh (مد عواض)</button>
+        <button class="btn" ion-button (click)="MadALPage()" outline block>Mad Arid Lissukun (مد عرض لسكون)</button>
+        <button class="btn" ion-button (click)="MadFPage()" outline block>Mad Farq (مد فرقي)</button>
+        <button class="btn" ion-button (click)="MadSQPage()" outline block>Mad Silah Qasirah (مد صله قصيره)</button>
+        <button class="btn" ion-button (click)="MadSTPage()" outline block>Mad Silah Tawilah (مد صله طويله)</button>
+        <button class="btn" ion-button (click)="MadLMuthKPage()" outline block style="padding: 30px 0px;">Mad Lazim Muthaqqal Kalimi<br>(مد لازم متقل كلمى)</button>
+        <button class="btn" ion-button (click)="MadLMukhKPage()" outline block style="padding: 30px 0px;">Mad Lazim Mukhaffaf Kalimi<br>(مد لازم مخفف كلمى)</button>
+        <button class="btn" ion-button (click)="MadLMuthHPage()" outline block style="padding: 30px 0px;">Mad Lazim Muthaqqal Harfi<br>(مد لازم متقل حرفى)</button>
+        <button class="btn" ion-button (click)="MadLMukhHPage()" outline block style="padding: 30px 0px;">Mad Lazim Mukhaffaf Harfi<br>(مد لازم مخفف حرفى)</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<style type="text/css">
+  .icon{
+    font-size: 18pt; 
+    color: #003300; 
+    font-weight: bold;
+  }
+
+  .title{
+    font-size: 13.5pt;
+  }
+
+  .content{
+    background-image: url(../assets/imgs/background.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+
+  .btn{
+    background-color: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0px 0px 7px #333; 
+    border: 0px; 
+    color: #003300; 
+    padding: 23px 0px; 
+    font-size: 12pt; 
+    border-radius: 5px; 
+    margin-bottom: 12px; 
+    text-transform: capitalize;
+    color: #003300; 
+  }
+</style>

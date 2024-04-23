@@ -1,0 +1,109 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon"></ion-icon>
+    </button>
+    <ion-title>
+      <span text-color="my-custom-color" class="title">Qalqalah</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="content">
+  <ion-card class="card">
+    <ion-card-header class="cardheader">
+      <p class="titlecardheader">Pengertian Qalqalah</p>
+      <hr>
+    </ion-card-header>
+    <ion-card-content>
+      <p align="justify" class="cardcontent">Qalqalah adalah bacaan pada huruf-huruf qalqalah dengan bunyi seakan-akan berdetik atau memantul. Huruf qalqalah ada lima yaitu : </p>
+      <img src="../assets/imgs/hurufqalqalah.png" />
+	  <p align="justify" class="cardcontent">Qalqalah terbagi menjadi dua jenis, yaitu qalqalah sughra dan qalqalah kubra.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-card-header class="cardheader">
+      <p class="titlecardheader">Qalqalah Sughra</p>
+      <hr>
+    </ion-card-header>
+    <ion-card-content>
+      <p align="justify" class="cardcontent">Qalqalah sughra (kecil) yaitu apabila salah satu daripada huruf qalqalah itu berbaris mati dan baris matinya adalah asli karena harakat sukun dan bukan karena waqaf. <br>
+	  Contoh :</p>
+      <img src="../assets/imgs/contohqsughra.png" />
+      <button ion-button block class="btn" (click)="playAudio1()"><ion-icon name="{{icon1}}" class="playpause"></ion-icon>{{text1}}</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-card-header class="cardheader">
+      <p class="titlecardheader">Qalqalah Kubra</p>
+      <hr>
+    </ion-card-header>
+    <ion-card-content>
+      <p align="justify" class="cardcontent">Qalqalah kubra (besar) yaitu apabila salah satu daripada huruf qalqalah itu dimatikan karena waqaf atau berhenti. Dalam keadaan ini, qalqalah dilakukan apabila bacaan diwaqafkan tetapi tidak diqalqalahkan apabila bacaan diteruskan.<br> 
+	  Contoh : </p>
+      <img src="../assets/imgs/contohqkubra.png" />
+      <button ion-button block class="btn" (click)="playAudio2()"><ion-icon name="{{icon2}}" class="playpause"></ion-icon>{{text2}}</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<style type="text/css">
+  .icon{
+    font-size: 18pt; 
+    color: #003300; 
+    font-weight: bold;
+  }
+
+  .title{
+    font-size: 13.5pt;
+  }
+
+  .content{
+    background-image: url(../assets/imgs/background.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+
+  .btn{
+    background-color: rgba(255, 255, 255, 0.5); 
+    box-shadow: 0px 0px 3px #333; 
+    border: 0px; 
+    /*color: #003300; */
+    padding: 23px 0px; 
+    font-size: 12pt; 
+    border-radius: 5px; 
+    text-transform: capitalize;
+    color: #003300; 
+  }
+
+  .playpause{
+    margin-right: 10px;
+    font-size: 12pt;
+  }
+
+  .card{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .cardheader{
+    padding-bottom: 2%;
+  }
+
+  .titlecardheader{
+    color: #003300; 
+    font-size: 12pt; 
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .cardcontent{
+    color: #003300; 
+    font-size: 12pt;
+  }
+
+  hr{
+    margin-bottom: 0px; 
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+</style>

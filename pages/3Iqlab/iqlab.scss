@@ -1,0 +1,11 @@
+page-Iqlab {
+	ion-header{
+		.toolbar-background{
+			background: linear-gradient(360deg, $header-first-color 0%, $header-last-color 100%);
+		}
+	}	
+
+	[text-color="my-custom-color"] {
+    	color: #003300;
+	}
+}

@@ -1,0 +1,60 @@
+<ion-header class="header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon"></ion-icon>
+    </button>
+    <ion-title>
+      <span text-color="my-custom-color" class="title">Belajar Tajwid (Lengkap)</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="content">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <div><img src="../assets/icon/icon_shadow.png" width="150"></div>
+        <br>
+        <button ion-button (click)="MateriPage()" outline block class="btn">Materi</button>
+        <button ion-button (click)="NadhomPage()" outline block class="btn">Nadhom</button>
+        <button ion-button (click)="TentangPage()" outline block class="btn">Tentang</button>
+        <button ion-button (click)="exitApp()" outline block class="btn">Keluar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<style type="text/css">
+  .icon{
+    font-size: 18pt; 
+    color: #003300; 
+    font-weight: bold;
+  }
+
+  .title{
+    font-size: 13.5pt;
+  }
+
+  .content{
+    background-image: url(../assets/imgs/background.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+
+  .btn{
+    background-color: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0px 0px 7px #333; 
+    border: 0px; 
+    color: #003300; 
+    padding: 23px 0px; 
+    font-size: 12pt; 
+    border-radius: 5px; 
+    margin-bottom: 12px; 
+    text-transform: capitalize;
+    color: #003300; 
+  }
+
+  div{
+    text-align: center;
+  }
+</style>

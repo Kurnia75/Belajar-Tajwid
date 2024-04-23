@@ -1,0 +1,96 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon"></ion-icon>
+    </button>
+    <ion-title>
+      <span text-color="my-custom-color" class="title">Mad Arid Lissukun</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+
+  <ion-card class="card">
+    <ion-card-header class="cardheader">
+      <p class="titlecardheader">Pengertian Mad Arid Lissukun</p>
+      <hr>
+    </ion-card-header>
+    <ion-card-content>
+      <p align="justify" class="cardcontent">Mad Arid Lissukun terjadi ketika berhenti (waqof) di akhir ayat sehingga mematikan huruf terakhir sedang sebelum huruf yang dimatikan tersebut terdapat mad asli. <br>
+      Cara membaca Mad Arid Lissukun kadar panjang bacaannya adalah 2, 4 atau 6 harakat.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card">
+    <ion-card-header class="cardheader">
+      <p class="titlecardheader">Contoh Mad Arid Lissukun</p>
+      <hr>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../assets/imgs/18contohmadal.png" />
+      <button ion-button block class="btn" (click)="playAudio()"><ion-icon name="{{icon}}" class="playpause"></ion-icon>{{text}}</button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<style type="text/css">
+  .icon{
+    font-size: 18pt; 
+    color: #003300; 
+    font-weight: bold;
+  }
+
+  .title{
+    font-size: 13.5pt;
+  }
+
+  .content{
+    background-image: url(../assets/imgs/background.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+
+  .btn{
+    background-color: rgba(255, 255, 255, 0.5); 
+    box-shadow: 0px 0px 3px #333; 
+    border: 0px; 
+    /*color: #003300; */
+    padding: 23px 0px; 
+    font-size: 12pt; 
+    border-radius: 5px; 
+    text-transform: capitalize;
+    color: #003300; 
+  }
+
+  .playpause{
+    margin-right: 10px;
+    font-size: 12pt;
+  }
+
+  .card{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .cardheader{
+    padding-bottom: 2%;
+  }
+
+  .titlecardheader{
+    color: #003300; 
+    font-size: 12pt; 
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .cardcontent{
+    color: #003300; 
+    font-size: 12pt;
+  }
+
+  hr{
+    margin-bottom: 0px; 
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+</style>

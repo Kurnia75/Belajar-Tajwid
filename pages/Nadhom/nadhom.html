@@ -1,0 +1,57 @@
+<ion-header class="header">
+  <ion-toolbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon"></ion-icon>
+    </button>
+    <ion-title>
+      <span text-color="my-custom-color" class="title">Nadhom</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding class="content">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <div><img src="../assets/icon/drsf_shadow.png" width="150"></div>
+        <br>
+        <button class="btn" ion-button (click)="Jilid1Page()" outline block>Jilid 1</button>
+        <button class="btn" ion-button (click)="Jilid2Page()" outline block>Jilid 2</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<style type="text/css">
+  .icon{
+    font-size: 18pt; 
+    color: #003300; 
+    font-weight: bold;
+  }
+
+  .title{
+    font-size: 13.5pt;
+  }
+
+  .content{
+    background-image: url(../assets/imgs/background.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+
+  .btn{
+    background-color: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0px 0px 7px #333; 
+    border: 0px; 
+    color: #003300; 
+    padding: 23px 0px; 
+    font-size: 12pt; 
+    border-radius: 5px; 
+    margin-bottom: 12px; 
+    text-transform: capitalize;
+    color: #003300; 
+  }
+  
+  div{
+    text-align: center;
+  }
+</style>
